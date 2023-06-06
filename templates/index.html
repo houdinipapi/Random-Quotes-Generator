@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <form action="/generate" method="POST">
+        <label for="filename">Enter Filename (without extension):</label>
+        <input type="text" name="filename" required>
+        <button type="submit">Generate Quotes</button>
+    </form>
+</body>
+</html>
